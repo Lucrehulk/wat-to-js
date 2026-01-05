@@ -1,0 +1,7 @@
+{
+  "$factorial": {
+    "params": "$n",
+    "params_count": 1,
+    "result": true
+  }
+}

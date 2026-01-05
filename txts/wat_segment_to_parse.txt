@@ -1,0 +1,21 @@
+(func $factorial (param $n i32) (result i32)
+  i32.const 1
+  local.set $result
+  loop $continue_loop
+    local.get $n
+    i32.const 1
+    i32.gt_s
+    if
+      local.get $result
+      local.get $n
+      i32.mul
+      local.set $result
+      local.get $n
+      i32.const 1
+      i32.sub
+      local.set $n
+      br 1
+    end
+  end
+  local.get $result
+)

@@ -1,0 +1,13 @@
+function $factorial($n) {
+let $result;
+$result = 1;
+$L_0: while (true) {
+if (($n > 1)) {
+$result = (($result * $n) | 0);
+$n = (($n - 1) | 0);
+continue $L_0;
+} else { break $L_0;
+}
+}
+return $result;
+}
