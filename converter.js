@@ -12,8 +12,6 @@ let offset;
 let address;
 let address_set; 
 let if_branch_copy_stack;
-let loops = {};
-let blocks = {};
 let values = {};
 let branch_result_count = 0;
 let holder_count = 0;
